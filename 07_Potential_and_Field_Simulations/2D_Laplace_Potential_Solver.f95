@@ -1,0 +1,33 @@
+
+PROGRAM P10_HELP
+IMPLICIT NONE
+DOUBLE PRECISION, ALLOCATABLE :: PHI(:,:) ! POTENTIALS
+INTEGER :: I, J, M ! DUMMY INTEGER VARIABLES
+INTEGER, PARAMETER :: N = 100 ! SIZE SHABAKEH
+INTEGER, PARAMETER :: ITERATIONS = 20000 ! TE'DADE TEKRARHA
+! -------------------
+OPEN(110,FILE="Potential.txt")
+WRITE(*,*) " PLEASE WAIT..."
+! -------------------
+ALLOCATE(PHI(N,N))
+PHI = 0.0
+PHI(1,:) = 25
+! -------------------
+DO M=1, ITERATIONS
+DO I=2, N-1
+DO J=2, N-1
+PHI(I,J) = (1.0/4.0)*(PHI(I,J+1)+PHI(I,J-1)+PHI(I+1,J)+PHI(I-1,J))
+END DO
+END DO
+END DO
+! -------------------
+DO I=1, N
+WRITE(110,"(100F20.15)") (PHI(I,J), J=1, N)
+END DO
+! -------------------
+DEALLOCATE(PHI)
+CLOSE(110)
+! -------------------
+WRITE(*,*) "WELL DONE."
+STOP
+END PROGRAM P10_HELP
