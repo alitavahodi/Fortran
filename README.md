@@ -4,6 +4,8 @@ A collection of Fortran programs developed for numerical methods, scientific com
 
 This repository contains implementations of fundamental numerical algorithms and computational techniques, with an emphasis on solving mathematical and physical problems using Fortran 90/95.
 
+---
+
 ## Topics
 
 * Fundamental Fortran Programming
@@ -17,6 +19,9 @@ This repository contains implementations of fundamental numerical algorithms and
 * Laplace and Poisson Equations
 * Potential and Field Simulations
 * Computational Physics
+
+---
+
 
 ## Repository Structure
 
@@ -50,6 +55,10 @@ Fortran/
 └── README.md
 ```
 
+---
+
+
+
 ## Numerical Methods
 
 The repository includes implementations and exercises involving:
@@ -65,50 +74,25 @@ The repository includes implementations and exercises involving:
 | Matrix Multiplication       | Numerical linear algebra              |
 | Statistical Methods         | Mean and standard deviation           |
 
+---
+
+
 ## Requirements
 
 * Fortran 90/95 compatible compiler
-* GNU Fortran (gfortran) is recommended
 
-## Compilation
 
-Using `gfortran`, a Fortran source file can be compiled with:
+---
 
-```bash
-gfortran program.F95 -o program
-```
-
-The compiled program can then be executed with:
-
-```bash
-./program
-```
-
-On Windows:
-
-```bash
-program.exe
-```
-
-Some programs require input data files. These files should be placed in the same working directory as the executable unless otherwise specified in the source code.
-
-## Output
-
-Several programs generate numerical results in text files for further analysis or visualization.
-
-Typical output files include:
-
-* `.txt` files containing numerical data
-* Coordinate and trajectory data
-* Potential distributions
-* Numerical integration results
-* Statistical results
 
 ## Purpose
 
 The main purpose of this repository is to document my development and application of Fortran programming skills in scientific and computational problems.
 
 The programs range from fundamental programming exercises to numerical simulations involving differential equations, numerical integration, Monte Carlo methods, and computational physics.
+
+---
+
 
 ## Author
 
