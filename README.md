@@ -99,6 +99,7 @@ The programs range from fundamental programming exercises to numerical simulatio
 **Ali Tavahodi**
 
 B.Sc. in Physics
+
 M.Sc. in Condensed Matter Physics
 
 GitHub: [Ali Tavahodi](https://github.com/alitavahodi)
