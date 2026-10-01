@@ -1,4 +1,4 @@
-program Ali_Farzanehpoor
+program Ali
 implicit none
 double precision,allocatable :: Rho(:,:) ! charge distribution
 double precision,allocatable :: U(:,:) ! Potential
