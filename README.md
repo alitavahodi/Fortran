@@ -49,9 +49,6 @@ Fortran/
 ├── 07_Potential_and_Field_Simulations/
 │   └── Numerical solutions of potential and field problems
 │
-├── Problem_Statements/
-│   └── Problem statements for selected programs
-│
 └── README.md
 ```
 
